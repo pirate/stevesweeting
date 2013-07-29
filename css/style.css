@@ -1,8 +1,26 @@
-@font-face { 
+/*@font-face { 
   font-family: News Cycle; 
     src: url('../fonts/NewsCycle-Regular.eot'); 
     src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
-} 
+} */
+
+@font-face{ 
+  font-family: 'myfontnormal';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?iefix') format('eot'),
+       url('WebFont.woff') format('woff'),
+       url('WebFont.ttf') format('truetype'),
+       url('WebFont.svg#webfont') format('svg');
+}
+
+@font-face{ 
+  font-family: 'myfontitalic';
+  src: url('WebFont2.eot');
+  src: url('WebFont2.eot?iefix') format('eot'),
+       url('WebFont2.woff') format('woff'),
+       url('WebFont2.ttf') format('truetype'),
+       url('WebFont2.svg#webfont') format('svg');
+}
 
 html { 
   height: 100%;
@@ -19,7 +37,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 body { 
-  font: normal .85em arial, sans-serif;
+  font: normal .85em myfontnormal, arial, sans-serif;
   background: #F5F5F5 url(../images/pattern.png);
   color: #444;
   padding-bottom: 40px;
@@ -35,7 +53,7 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  font: normal 200% 'News Cycle', arial, sans-serif;
+  font: normal 200% myfontnormal, arial, sans-serif;
   color: #222;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
@@ -46,7 +64,7 @@ h1 {
 }
 
 h2 { 
-  font: normal 200% 'News Cycle', arial, sans-serif;
+  font: normal 200% myfontnormal, arial, sans-serif;
   color: #222;  
   margin: 0;
   padding: 0 0 8px 0;
@@ -54,13 +72,13 @@ h2 {
 }
 
 h3 { 
-  font: normal 125% 'trebuchet ms', arial, sans-serif;
+  font: normal 125% myfontnormal, arial, sans-serif;
 }
 
 h4, h5, h6 { 
   margin: 0;
   padding: 0 0 5px 0;
-  font: normal 110% arial, sans-serif;
+  font: normal 110% myfontnormal, arial, sans-serif;
   color: #999;
   line-height: 1.5em;
 }
@@ -153,7 +171,7 @@ header {
 }
 
 #logo h1 { 
-  font: normal 330% 'News Cycle', arial, sans-serif;
+  font: normal 330% myfontnormal, arial, sans-serif;
   padding: 37px 0 0 0;
   color: #222;
 }
@@ -201,7 +219,7 @@ nav {
   
 .sidebar h3 { 
   padding: 0 15px 20px 0;
-  font: 200% 'News Cycle', arial, sans-serif;
+  font: 200% myfontnormal, arial, sans-serif;
   text-shadow:  #FFF 1px 1px;
   margin: 0 1px;
   color: #222;
@@ -260,9 +278,105 @@ nav {
   padding-bottom:80px;
 }
 
+.bandcamp-player {
+  float:left;
+  padding-left:40px;
+  padding-top: 50px;
+  width:500px;
+  height:700px;
+}
+
+.sheet-music-wrapper {
+  float:right;
+  padding-top:70px;
+  padding-right: 100px;
+  width:300px;
+  height:500px;
+}
+
+.sheet-music-wrapper h2 {
+  font-family: Helvetica, sans serif;
+  font-size:14px;
+  text-align: center;
+}
+
+.sheet-music-sample {
+  position: relative;
+}
+.sheet-music-sample-image {
+  width:300px;
+  height:350px;
+  border-style:solid;
+  border-width:3px;
+  padding:2px;
+  border-color: black;
+}
+
+.zoom {
+  position:absolute;
+  width:70px;
+  padding:5px;
+  bottom:0;
+  right:0;
+}
+
+.purchase-book {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.info-text {
+  display: block;
+  font-family: arial;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: gray;
+  border-width: 2px;
+  color:#000000;
+  font-size: 16px;
+  padding:50px;
+}
+
+.info-text font {
+  color:purple;
+  font-size:18px;
+  font-variant: normal;
+}
+
+.download-link {
+  margin-top: 20px;
+  color: #222;
+  text-decoration: none;
+}
+
+.download-link img {
+  background-color: #24c2de;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: center;
+  padding:5px;
+  width: 130px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+}
+
+.sheet-music {
+  width: 820px;
+  margin-left: -80px;
+  height: 800px;
+}
+
 footer { 
   width: 950px;
-  font: normal 130% 'News Cycle',  arial, sans-serif;
+  font: normal 130% "Arial Narrow",  arial, sans-serif;
   height: 120px;
   padding: 20px 0 5px 0;
   text-align: center; 
@@ -310,7 +424,7 @@ footer a:hover {
 }
   
 .form_settings .submit { 
-  font: 140% 'News Cycle', arial, sans-serif; 
+  font: 140% myfontnormal, arial, sans-serif; 
   border: 0; 
   width: 100px; 
   margin: 0 0 0 162px; 
@@ -415,7 +529,7 @@ ul#images img {
 }
 
 .lavaLampWithImage li a {
-  font: normal 130% 'News Cycle', sans-serif;
+  font: normal 170% myfontnormal, sans-serif;
   text-shadow:1px 1px #FFF;
   text-decoration: none;
   color: #222;
