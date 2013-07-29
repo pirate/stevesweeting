@@ -272,6 +272,21 @@ nav {
   width:377px;
 }
 
+.book-title {
+  text-align: center;
+  font-family: myfontnormal;
+  font-size: 34px;
+  margin-bottom: -30px;
+}
+
+.tracklist {
+  margin-left:50px !important; 
+  font-size: 14px !important; 
+  font: arial, sans-serif !important; 
+  line-height: 16px !important; 
+  width:300px !important;
+}
+
 #about-text {
   position: relative;
   display:block;
