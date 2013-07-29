@@ -146,6 +146,12 @@ header {
   padding: 0 0 10px 0;
 }
 
+#logo img {
+  width: 300px;
+  margin-top:15px;
+  margin-left:-4px;
+}
+
 #logo h1 { 
   font: normal 330% 'News Cycle', arial, sans-serif;
   padding: 37px 0 0 0;
@@ -225,10 +231,39 @@ nav {
   line-height: 1.5em;
 }
 
+#about-images {
+  position:relative;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 40px;
+  height:500px;
+  width:646px;
+}
+
+#left-portrait {
+  position:absolute;
+  top:0;
+  left:0;
+  width:269px;
+}
+
+#right-portrait {
+  position:absolute;
+  top:0;
+  right:0;
+  width:377px;
+}
+
+#about-text {
+  position: relative;
+  display:block;
+  padding-bottom:80px;
+}
+
 footer { 
   width: 950px;
   font: normal 130% 'News Cycle',  arial, sans-serif;
-  height: 90px;
+  height: 120px;
   padding: 20px 0 5px 0;
   text-align: center; 
   color: #222;
@@ -342,9 +377,15 @@ ul#images li {
   overflow: hidden;
   padding: 0;
   float: left;
-  width: 155px;
+  width: 117px;
   height: 300px;
   list-style: none;
+}
+
+ul#images img {
+  position: absolute;
+  left:-20px; 
+  margin-left:-42px;
 }
 
 
